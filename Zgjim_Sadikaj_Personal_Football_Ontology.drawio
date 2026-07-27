@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="zgjim-football-ontology" name="Zgjim Personal &amp; Football Ontology">
+    <mxGraphModel dx="1471" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="person" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=16;" value="Person" vertex="1">
+          <mxGeometry height="70" width="180" x="100" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="student" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=15;" value="Student" vertex="1">
+          <mxGeometry height="60" width="160" x="240" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="footballfan" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=15;" value="FootballFan" vertex="1">
+          <mxGeometry height="60" width="170" x="310" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="education" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=15;" value="Education" vertex="1">
+          <mxGeometry height="60" width="170" x="430" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="university" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=15;" value="University" vertex="1">
+          <mxGeometry height="60" width="180" x="680" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="professionalrole" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=15;" value="ProfessionalRole" vertex="1">
+          <mxGeometry height="60" width="190" x="290" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="organization" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=15;" value="Organization" vertex="1">
+          <mxGeometry height="60" width="180" x="700" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="football" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=15;" value="Football" vertex="1">
+          <mxGeometry height="60" width="180" x="980" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="club" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=15;" value="FootballClub" vertex="1">
+          <mxGeometry height="60" width="190" x="1230" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="fullname" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=2;fontSize=13;" value="hasFullName : xsd:string" vertex="1">
+          <mxGeometry height="55" width="220" x="20" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="startyear" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=2;fontSize=13;" value="hasStartYear : xsd:integer" vertex="1">
+          <mxGeometry height="55" width="220" x="650" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jobtitle" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=2;fontSize=13;" value="hasJobTitle : xsd:string" vertex="1">
+          <mxGeometry height="55" width="220" x="275" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="clubname" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=2;fontSize=13;" value="hasName : xsd:string" vertex="1">
+          <mxGeometry height="55" width="200" x="1220" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_student" edge="1" parent="1" source="student" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;fontColor=#6c8ebf;endArrow=block;endFill=0;fontStyle=2;" target="person" value="subClassOf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_fan" edge="1" parent="1" source="footballfan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;fontColor=#6c8ebf;endArrow=block;endFill=0;fontStyle=2;" target="person" value="subClassOf">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haseducation" edge="1" parent="1" source="person" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#c0504d;fontColor=#c0504d;endArrow=block;endFill=1;fontStyle=1;" target="education" value="hasEducation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attended" edge="1" parent="1" source="education" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#c0504d;fontColor=#c0504d;endArrow=block;endFill=1;fontStyle=1;" target="university" value="attendedAt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="worksas" edge="1" parent="1" source="person" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#c0504d;fontColor=#c0504d;endArrow=block;endFill=1;fontStyle=1;" target="professionalrole" value="worksAs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="worksat" edge="1" parent="1" source="professionalrole" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#c0504d;fontColor=#c0504d;endArrow=block;endFill=1;fontStyle=1;" target="organization" value="worksAt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hasinterest" edge="1" parent="1" source="person" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#c0504d;fontColor=#c0504d;endArrow=block;endFill=1;fontStyle=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="football" value="hasInterest">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="supports" edge="1" parent="1" source="footballfan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#c0504d;fontColor=#c0504d;endArrow=block;endFill=1;fontStyle=1;" target="club" value="supportsClub">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fullnameedge" edge="1" parent="1" source="fullname" style="dashed=1;endArrow=open;html=1;strokeColor=#82b366;" target="person" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yearEdge" edge="1" parent="1" source="startyear" style="dashed=1;endArrow=open;html=1;strokeColor=#82b366;" target="education" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jobtitleEdge" edge="1" parent="1" source="jobtitle" style="dashed=1;endArrow=open;html=1;strokeColor=#82b366;" target="professionalrole" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="clubnameEdge" edge="1" parent="1" source="clubname" style="dashed=1;endArrow=open;html=1;strokeColor=#82b366;" target="club" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=13;align=left;spacingLeft=15;spacingTop=10;" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&#39;color:#6c8ebf&#39;&gt;■&lt;/span&gt; Class&lt;br&gt;&lt;span style=&#39;color:#c0504d&#39;&gt;→&lt;/span&gt; Object Property&lt;br&gt;&lt;span style=&#39;color:#6c8ebf&#39;&gt;▷&lt;/span&gt; subClassOf&lt;br&gt;&lt;span style=&#39;color:#82b366&#39;&gt;■&lt;/span&gt; Data Property (literal)" vertex="1">
+          <mxGeometry height="170" width="260" x="1160" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=22;" value="Zgjim Sadikaj — Personal &amp; Football Interest Ontology" vertex="1">
+          <mxGeometry height="50" width="650" x="430" y="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
